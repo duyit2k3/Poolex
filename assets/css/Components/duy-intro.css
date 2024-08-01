@@ -31,7 +31,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-bottom: max(67px, min(10vw, 110px));
+  padding-bottom: max(67px, min(10vw, 63px));
 }
 .intro-title {
   font-size: max(16px, min(1.5vw, 24px));
