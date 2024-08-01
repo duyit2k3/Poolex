@@ -1,0 +1,108 @@
+.topsell-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-main);
+  padding-top: 9.7%;
+  padding-bottom: 8.1%;
+}
+
+.topsell-list {
+  width: 100%;
+  margin-top: 5.1%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+}
+.topsell-card {
+  border: none;
+  display: flex;
+  align-items: baseline;
+  max-width: 278px;
+}
+
+.topsell-card .card-header {
+  width: 100%;
+  border-radius: 12px;
+  background-color: rgba(21, 74, 129, 0.15);
+  padding: 0;
+  max-height: 296px;
+}
+
+.topsell-card .card-header img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  object-fit: scale-down;
+}
+
+.topsell-card .card-body {
+  width: 100%;
+  color: var(--deep-blue-color);
+  padding: 0;
+  padding-top: 5.7%;
+  padding-bottom: 4.4%;
+}
+
+.topsell-card .card-title {
+  font-weight: 600;
+  font-size: max(14px, min(4vw, 16px));
+  line-height: max(12px, min(2vw, 19.2px));
+}
+
+.topsell-card .card-text {
+  font-weight: 400;
+  font-size: max(12px, min(1.5vw, 14px));
+}
+
+.topsell-card .card-footer {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.topsell-newprice {
+  font-weight: 600;
+  font-size: max(18px, min(2vw, 24px));
+  line-height: max(21.6px, min(2vw, 28.8px));
+  color: var(--deep-blue-color);
+}
+
+.topsell-oldprice {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--slate-gray-color);
+  text-decoration: line-through;
+}
+
+.btnBuy {
+  background-color: var(--goldenrod-color);
+  padding: 2.2% 5.8%;
+}
+
+.btnBuy:hover {
+  background-color: var(--goldenrod-color);
+  opacity: 0.9;
+}
+
+
+.btnStore {
+  margin-top: 4.5%;
+}
+
+@media only screen and (max-width: 1023px) {
+  .topsell-list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    row-gap: 23px;
+  }
+  .topsell-card {
+    max-width: 100%;
+}
+}

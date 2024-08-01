@@ -1,0 +1,129 @@
+.procedure {
+  background-color: var(--white-text-color);
+}
+
+.procedure-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-main);
+  row-gap: max(10px, min(1vw, 50px));
+}
+.procedure-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.procedure-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.procedure-softline {
+  position: relative;
+}
+
+.procedure-softline img {
+  width: 65%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.procedure-heading {
+  margin-bottom: max(10px, min(1vw, 30px));
+  padding-top: max(0px, min(9vw, 120px));
+}
+
+.procedure-desc {
+  width: max(328px, min(60vw, 850px));
+}
+
+.procedure-swiper .swiper-slide {
+  display: flex;
+}
+
+.procedure-pagination {
+  display: none;
+}
+
+
+.procedure-item {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+
+.procedure-card {
+  width: 100%;
+  height: auto;
+  border: none;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.procedure-img {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.procedure-img img {
+  height: 100px;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.procedure-next {
+  display: flex;
+}
+
+.procedure-next img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.procedure .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: max(9px, min(1vw, 18px));
+}
+.procedure .circle {
+  height: max(20px, min(2vw, 36px));
+  width: max(20px, min(2vw, 36px));
+  border-radius: 50%;
+  background-color: var(--goldenrod-color);
+  font-size: max(12px, min(1.5vw, 24px));
+  font-weight: 400;
+  color: var(--white-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.procedure .card-text {
+  font-weight: 400;
+  font-size: max(14px, min(1vw, 18px));
+  line-height: max(14px, min(1.5vv, 30px));
+  color: var(--slate-gray-color);
+}
+
+.btnStart {
+  padding: max(4px, min(2.6vw, 25.5px)) max(18px, min(5.5vw, 6.07%));
+}
+
+
+@media only screen and (max-width: 1023px) {
+  .procedure-img img {
+    height: 70px;
+  }
+}
+

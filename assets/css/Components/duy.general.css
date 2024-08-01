@@ -1,0 +1,26 @@
+.btn-general {
+  color: var(--white-text-color);
+  font-size: max(18px, min(1.5vw, 32px));
+  font-weight: 500;
+  line-height: max(21px, min(1vw, 38px));
+  text-transform: uppercase;
+  padding: max(4px, min(2vw, 25.5px)) max(18px, min(5.5vw, 3.67%));
+  border-radius: max(8px, min(1vw, 12px));
+  background-color: var(--goldenrod-color);
+}
+
+.heading {
+  font-weight: 600;
+  font-size: max(22px, min(2vw, 32px));
+  color: var(--deep-blue-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: max(14px, min(1.2vw, 18px));
+  line-height: max(20px, min(2vw, 30px));
+  text-align: center;
+  color: var(--deep-blue-color);
+}
