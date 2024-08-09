@@ -3,6 +3,7 @@
   object-fit: contain;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .intro-wrapper {
@@ -14,7 +15,7 @@
   color: var(--white-text-color);
   font-family: var(--font-main);
   z-index: -1;
-  padding-top: 13.5%;
+  padding-top: 9.5%;
   padding-bottom: 23px;
 }
 
@@ -22,7 +23,6 @@
   height: 100%;
   width: 100%;
 }
-
 
 .intro-content {
   height: 100%;
@@ -35,14 +35,14 @@
 }
 .intro-title {
   font-size: max(16px, min(1.5vw, 24px));
-  font-weight: 300;
+  font-weight: 400;
   line-height: 29px;
   margin-bottom: 6px;
 }
 
 .intro-heading {
   width: max(308px, min(72vw, 700px));
-  line-height: max(48px, min(8vw, 120px));
+  line-height: max(48px, min(7vw, 120px));
   font-weight: 600;
   font-size: max(40px, min(5.6vw, 96px));
 }
@@ -56,34 +56,31 @@
 
 .btnContact {
   margin-top: max(58px, min(4vw, 63px));
+  padding: 17px 38px;
 }
 
-.intro-pagination span.swiper-pagination-bullet{
+.intro-pagination span.swiper-pagination-bullet {
+  background-image: url(../../images/icons/none-active.svg);
   width: max(15px, min(1.5vw, 24px));
   height: max(15px, min(1.5vw, 24px));
-  background-color: transparent;
-  border-radius: 50%;
-  border: 2px solid var(--white-text-color);
   opacity: 1;
+  background-position: center;
+  object-fit: contain;
+  background-size: cover;
+  background-color: transparent;
 }
 .intro-pagination span.swiper-pagination-bullet-active {
-  position: relative;
-}
-.intro-pagination span.swiper-pagination-bullet-active::before {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  transform: translate(25%, 25%);
-  content: "";
-  width: 68%;
-  height: 68%;
-  border-radius: 50%;
-  background-color: var(--white-text-color);
+  background-image: url(../../images/icons/active.svg);
+  background-position: center;
+  width: max(15px, min(1.5vw, 24px));
+  height: max(15px, min(1.5vw, 24px));
+  object-fit: contain;
+  background-size: cover;
 }
 
 /* Sidebar */
 
-.intro-sidebar{
+.intro-sidebar {
   position: absolute;
   top: 0;
   right: 0;
@@ -93,19 +90,19 @@
   justify-content: center;
   align-items: end;
   row-gap: 6px;
+  z-index: 80;
 }
 
 .sidebar-item {
-  width: 72px;
+  width: fit-content;
   height: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--goldenrod-color);
-  border-radius: 12px 0px;  
+  border-radius: 12px 0px;
   position: relative;
   transition: all 0.25s ease;
-  z-index: 2000;
 }
 
 .sidebar-item div {
@@ -118,7 +115,6 @@
   height: auto;
   margin: auto;
 }
-
 
 .sidebar-item a {
   font-size: max(10px, min(1vw, 20px));
@@ -144,13 +140,12 @@
   display: block;
 }
 
-
 @media only screen and (max-width: 1440px) {
   .sidebar-item {
     width: 60px;
     height: 60px;
   }
-  
+
   .sidebar-item div {
     width: 60px;
   }
@@ -158,10 +153,13 @@
     width: 200px;
     justify-content: start;
   }
+  .intro-content {
+    padding-top: 50px;
+  }
+  .btnContact {
+    padding: 14px 36px;
+  }
 }
-
-
-
 
 @media only screen and (max-width: 1023px) {
   .sidebar-item {
@@ -181,13 +179,18 @@
     width: 160px;
     justify-content: start;
   }
+  .btnContact {
+    padding: 10px 22px;
+  }
 }
-
 
 @media only screen and (max-width: 739px) {
   .intro-wrapper {
     padding-top: 147px;
     padding-bottom: 29px;
+  }
+  .intro-content {
+    padding-top: 0;
   }
   .intro-subtitle {
     display: none;
@@ -202,5 +205,8 @@
   .sidebar-item:hover {
     width: 100px;
     justify-content: start;
+  }
+  .btnContact {
+    padding: 8px 16px;
   }
 }

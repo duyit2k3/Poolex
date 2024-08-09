@@ -1,13 +1,14 @@
 .service {
   background-color: var(--white-text-color);
   font-family: var(--font-main);
+  padding-bottom: 5.55%;
+  padding-top: 92px;
 }
 
 .service-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 7%;
 }
 
 .service-softline {
@@ -15,24 +16,23 @@
 }
 
 .service-softline img {
+  width: 75.7%;
   position: absolute;
   top: 41px;
-  left: 0;
+  left: -5%;
 }
 .service-descr {
   width: max(301px, min(80vw, 880px));
   text-align: center;
-  font-size: max(14px, min(2.5vw, 32px));
+  font-size: 32px;
   font-weight: 400;
-  line-height: max(20px, min(4vw, 46px));
+  line-height: 46px;
   color: var(--steel-blue-color);
-  padding-bottom: 5.87%;
-
+  padding-bottom: 76px;
 }
 
 .service-list {
-  width: 100%;
-  padding-bottom: 5.55%;
+  max-width: 1220px;
 }
 
 .service-heading {
@@ -44,20 +44,42 @@
   height: 100%;
 }
 
-.service .swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 30px;
+.service-swiper .swiper-wrapper {
+  margin: 0;
 }
 
-.service-pagination {
-  display: none;
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: unset;
+  justify-content: center;
+  max-width: 202px;
+}
+
+.service-card,
+.service-card .card-header {
+  border: none;
+}
+
+.service .card-header {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 19px 0;
+}
+
+.service .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 .service-icon {
-  width: max(90px, min(28vw, 200px));
-  height: max(90px, min(28vw, 200px));
+  width: max(90px, min(11.5vw, 200px));
+  height: max(90px, min(11.5vw, 200px));
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -72,11 +94,16 @@
   width: 45%;
 }
 .service-title {
+  width: 202px;
   font-weight: 500;
-  font-size: max(18px, min(1.5vw, 24px));
-  line-height: max(20px, min(2vw, 28.8px));
+  font-size: 24px;
+  line-height: max(20px, min(2.5vw, 29px));
   color: var(--deep-blue-color);
   text-align: center;
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .service-para {
   width: max(303px, min(60vw, 995px));
@@ -86,20 +113,97 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 1440px) {
+  .service {
+    padding-top: 72px;
+  }
+  .service-list {
+    max-width: 1100px;
+  }
+  .service-icon img {
+    width: 42.5%;
+  }
+  .service-title {
+    font-size: 20px;
+  }
+  .service-heading {
+    padding-bottom: 38px;
+  }
+  .service-descr {
+    font-size: 26px;
+    padding-bottom: 60px;
+    line-height: 40px;
+  }
+}
 
-
+@media only screen and (max-width: 1283px) {
+  .service-list {
+    max-width: 850px;
+  }
+  .service-title {
+    font-size: 18px;
+  }
+  .service .card-header {
+    padding-bottom: 16px;
+  }
+  .service-heading {
+    padding-bottom: 34px;
+  }
+  .service-descr {
+    font-size: 20px;
+    padding-bottom: 48px;
+    line-height: 35px;
+  }
+}
 
 @media only screen and (max-width: 1023px) {
-  .service-softline{
+  .service-softline {
     display: none;
+  }
+  .service-list {
+    max-width: 100%;
+  }
+  .service-title {
+    font-size: 14px;
+    min-height: 40px;
+  }
+  .service .card-header {
+    padding-bottom: 13px;
+  }
+  .service-heading {
+    font-size: 22px;
+    padding-bottom: 18px;
+  }
+  .service-descr {
+    font-size: 16px;
+    padding-bottom: 38px;
+    line-height: 28px;
   }
 }
 
 @media only screen and (max-width: 739px) {
-  .service .container-xl {
-    height: min(650px, 60vh);
+  .service {
+    padding-top: 62px;
+    padding-bottom: 26px;
   }
   .service-title {
-    width: 100px;
+    width: 65px;
   }
+  .service-title.special {
+    width: 130px;
+  }
+  .service .card-header {
+    padding-bottom: 10px;
+  }
+  .service-heading {
+    padding-bottom: 15px;
+  }
+  .service-descr {
+    font-size: 14px;
+    padding-bottom: 16px;
+    line-height: 20px;
+  }
+  .service-icon img {
+    width: 45%;
+  } 
 }

@@ -22,11 +22,22 @@
 
 .news-heading {
   width: max(251px, min(50vw, 642px));
+  margin-bottom: 31px;
+}
+.news-title {
+  display: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--slate-gray-color);
+  text-align: center;
+  width: 301px;
+  margin-bottom: 44px;
 }
 
 .news-list {
   width: 100%;
   display: flex;
+  max-width: 1200px;
 }
 
 .news-card .card-title {
@@ -34,6 +45,7 @@
   font-size: max(12px, min(1.5vw, 22px));
   line-height: 32px;
   color: var(--deep-blue-color);
+  max-height: calc(32px * 3);
 }
 
 .card-middle {
@@ -44,14 +56,18 @@
 .news-card {
   border: none;
 }
+.news-card .card-body {
+  padding: 0;
+}
 
-.news-component{
+.news-component {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.news-time, .news-chat {
+.news-time,
+.news-chat {
   font-weight: 400;
   font-size: max(14px, min(1.5vw, 16px));
   line-height: 19px;
@@ -60,13 +76,37 @@
 
 .news-card .card-title {
   font-weight: 600;
-  font-size: max(16px, min(1.5vw, 22px));
+  font-size: max(13px, min(1.5vw, 22px));
   line-height: 32px;
+  color: var(--deep-blue-color);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.news-btn-next,
+.news-btn-prev {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255, 0.2);
+  top: 35%;
+}
+
+.news-btn-next::after,
+.news-btn-prev::after {
+  font-weight: 900;
+  font-size: 16px;
   color: var(--deep-blue-color);
 }
 
-.news-pagination {
+.news-btn-next.swiper-button-disabled,
+.news-btn-prev.swiper-button-disabled {
   display: none;
+}
+.news-btn-next {
+  margin-right: 9px;
 }
 
 @media only screen and (max-width: 1283px) {
@@ -79,11 +119,36 @@
   .news-card .card-title {
     line-height: 22px;
   }
-  
+  .news-component {
+    margin-top: 0px;
+  }
+  .card-middle {
+    margin: 6px 0;
+  }
 }
 
 @media only screen and (max-width: 739px) {
+  .news {
+    padding-top: 61px;
+  }
+  .news-wrapper {
+    padding-top: 0;
+  }
+  .news-heading {
+    margin-bottom: 16px;
+  }
+  .news-title {
+    display: block;
+  }
   .news-card .card-title {
     line-height: 18px;
+  }
+  .news-softline img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: -24%;
+    transform: translateY(34%);
   }
 }

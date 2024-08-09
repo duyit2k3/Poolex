@@ -3,6 +3,7 @@
 @import "./SetupBase/variables.css";
 @import "./Layouts/duy-header.css";
 @import "./Layouts/duy-footer.css";
+@import "./Components/duy.general.css";
 @import "./Components/duy-intro.css";
 @import "./Components/duy-service.css";
 @import "./Components/duy-benefits.css";
@@ -13,4 +14,3 @@
 @import "./Components/duy-solution.css";
 @import "./Components/duy-contact.css";
 @import "./Components/duy-news.css";
-@import "./Components/duy.general.css";

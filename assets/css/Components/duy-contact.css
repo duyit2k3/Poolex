@@ -4,20 +4,17 @@
 
 .contact-softline {
   position: relative;
-  z-index: -1;
 }
 
 .contact-softline img {
-  width: 65%;
-  height: auto;
+  width: 77.2%;
   position: absolute;
-  top: 0;
+  top: -150px;
   right: 0;
-  translate: 0 -8%;
 }
 
 .contact-wrapper {
-  padding-top: 11.6%;
+  width: 1180px;
 }
 
 .contact-map {
@@ -32,7 +29,6 @@
   width: 100%;
   height: auto;
 }
-
 
 .contact-title {
   font-weight: 600;
@@ -51,9 +47,16 @@
 }
 
 .contact-form {
-  padding: 2rem 2rem 1rem;
+  padding: 2rem 2rem 3.875rem;
   background-color: rgba(223, 233, 244, 0.6);
   border-radius: 9px;
+}
+.contact-form .form-control {
+  border: none;
+  padding: 1rem 1.7rem;
+}
+.contact-form .form-control:focus {
+  box-shadow: none;
 }
 
 .contact .form-floating > label {
@@ -62,6 +65,7 @@
   line-height: 22px;
   color: var(--slate-gray-color);
   padding: 1rem 1.7rem;
+  border: none;
 }
 
 .contact .form-floating > label span {
@@ -90,6 +94,14 @@
 }
 
 @media only screen and (max-width: 1023px) {
+  .contact-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-img {
+    width: 70%;
+  }
   .contact-title {
     font-size: 22px;
     line-height: 27px;
@@ -102,10 +114,53 @@
   .btnSend {
     line-height: 16px;
   }
-  
+
   .form-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 16px;
   }
+
+  .contact .form-floating > label {
+    padding: 1rem 1rem;
+  }
+  .contact-form .form-control {
+    padding: 1rem 1rem;
+  }
+  .contact .form-floating > label {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  .contact-form {
+    padding: 24px 12px 27px;
+  }
+  .contact-form .form-floating {
+    margin-bottom: 16px !important;
+  }
+  .contact .form-floating > label {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .form-floating .form-control {
+    height: 48px;
+    min-height: 48px;
+  }
+  .contact .form-floating > label {
+    padding: 0.8rem 1rem;
+  }
+  .form-note {
+    height: 66px;
+    min-height: 66px;
+    margin-bottom: 24px !important;
+  }
+  .btnSend {
+    padding: 9px 17.4px;
+    border-radius: 8px;
+  }
+}
+
+@media only screen and (max-width: 395px) {
 }
