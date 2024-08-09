@@ -215,7 +215,8 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a href="#" class="header-link" role="button" data-bs-auto-close="outside" aria-expanded="false">THIẾT BỊ</a>
+                  <a href="#" class="header-link" role="button" data-bs-auto-close="outside" aria-expanded="false">THIẾT
+                    BỊ</a>
                   <ul class="dropdown-menu dropdown-menu__custom">
                     <li class="dropend">
                       <a href="#" class="dropdown-item dropend-toggle" role="button" aria-expanded="false">
@@ -283,11 +284,12 @@
                           <a href="#" class="dropdown-item">Robot vệ sinh</a>
                         </li>
                       </ul>
-                    </li> 
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="#" class="header-link" role="button" data-bs-auto-close="outside" aria-expanded="false">DỰ ÁN CỦA BẠN</a>
+                  <a href="#" class="header-link" role="button" data-bs-auto-close="outside" aria-expanded="false">DỰ ÁN
+                    CỦA BẠN</a>
                   <ul class="dropdown-menu dropdown-menu__custom">
                     <li>
                       <a href="#" class="dropdown-item">Các bước triển khai</a>
@@ -1007,9 +1009,9 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next procedure-btn-next"></div>
-              <div class="swiper-button-prev procedure-btn-prev"></div>
             </div>
+            <div class="swiper-button-next procedure-btn-next"></div>
+            <div class="swiper-button-prev procedure-btn-prev"></div>
           </div>
           <button class="btn-general btnStart">BẮT ĐẦU</button>
         </div>
@@ -1577,14 +1579,14 @@
 
     var procedureSwiper = new Swiper(".procedure-swiper", {
       freeMode: true,
+      navigation: {
+        nextEl: ".procedure-btn-next",
+        prevEl: ".procedure-btn-prev",
+      },
       breakpoints: {
         0: {
           slidesPerView: 2,
           spaceBetween: 10,
-        },
-        395: {
-          slidesPerView: 3,
-          spaceBetween: 20,
         },
         768: {
           slidesPerView: 3,
