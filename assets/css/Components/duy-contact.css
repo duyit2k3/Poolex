@@ -115,12 +115,6 @@
     line-height: 16px;
   }
 
-  .form-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 16px;
-  }
-
   .contact .form-floating > label {
     padding: 1rem 1rem;
   }

@@ -1,4 +1,4 @@
-.btn-general {
+.general-btn {
   color: var(--white-text-color);
   font-size: 32px;
   font-weight: 500;
@@ -7,8 +7,7 @@
   border-radius: 12px;
   background-color: var(--goldenrod-color);
 }
-
-.heading {
+.general-heading {
   font-weight: 600;
   font-size: max(22px, min(1.8vw, 32px));
   line-height: 38px;
@@ -16,31 +15,46 @@
   text-transform: uppercase;
   text-align: center;
 }
-
-.desc {
+.general-desc {
   font-weight: 400;
   font-size: max(14px, min(1.2vw, 18px));
   line-height: 30px;
   text-align: center;
   color: var(--deep-blue-color);
 }
+.overfow-auto {
+  overflow: auto !important;
+}
+.hidden-scrollbar {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+}
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
 
 @media only screen and (max-width: 1440px) {
-  .btn-general {
+
+  .general-btn {
     font-size: 24px;
     line-height: 30px;
   }
-  .desc {
+  .general-desc {
     line-height: 26px;
   }
 }
 @media only screen and (max-width: 1023px) {
-  .btn-general {
+  .general-heading {
+    line-height: 30px;
+  }
+  .general-btn {
     font-size: 18px;
     line-height: 22px;
     border-radius: 8px;
   }
-  .desc {
-    line-height: 22px;
+  .general-desc {
+    line-height: 21px;
   }
 }

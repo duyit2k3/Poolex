@@ -130,13 +130,10 @@
   justify-content: start;
 }
 
-.intro-catalog:hover a {
-  display: block;
-}
-.intro-contact:hover a {
-  display: block;
-}
-.intro-location:hover a {
+.intro-catalog:hover a,
+.intro-contact:hover a,
+.intro-location:hover a
+{
   display: block;
 }
 
@@ -202,10 +199,17 @@
   .sidebar-item div {
     width: 34px;
   }
+
   .sidebar-item:hover {
-    width: 100px;
-    justify-content: start;
+    width: fit-content;
+    justify-content: center;
   }
+  .intro-catalog:hover a,
+  .intro-contact:hover a,
+  .intro-location:hover a {
+    display: none;
+  }
+
   .btnContact {
     padding: 8px 16px;
   }

@@ -92,8 +92,12 @@
   border-radius: 50%;
   background-color: rgb(255, 255, 255, 0.2);
   top: 35%;
+  transition: all 0.25s ease-in-out;
 }
-
+.news-btn-next:hover,
+.news-btn-prev:hover {
+  background-color: var(--white-text-color);
+}
 .news-btn-next::after,
 .news-btn-prev::after {
   font-weight: 900;
@@ -101,10 +105,13 @@
   color: var(--deep-blue-color);
 }
 
+
 .news-btn-next.swiper-button-disabled,
 .news-btn-prev.swiper-button-disabled {
   display: none;
 }
+
+
 .news-btn-next {
   margin-right: 9px;
 }

@@ -1,20 +1,13 @@
 .feedback {
   position: relative;
-}
-
-.feedback-bg {
   height: 530px;
-  position: relative;
-}
-.feedback-bg > img {
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
+  background-image: url(../../images/backgrounds/feedback1.png);
   object-fit: cover;
   object-position: right;
+  background-size: cover;
+  background-position: center;
 }
-
-.feedback-bg::before {
+.feedback::before {
   content: "";
   display: block;
   position: absolute;
@@ -28,6 +21,7 @@
   right: 0;
   bottom: 0;
 }
+
 
 .feedback-container {
   position: absolute;
@@ -135,11 +129,11 @@
     display: none;
   }
 
-  .feedback-bg {
+  .feedback {
     height: 450px;
   }
 
-  .feedback-bg::before {
+  .feedback::before {
     background: linear-gradient(
       to right,
       var(--steel-blue-color) 5%,
@@ -164,10 +158,10 @@
     margin-top: 106px;
     margin-bottom: 22px;
   }
-  .feedback-bg {
+  .feedback {
     height: 350px;
   }
-  .feedback-bg::before {
+  .feedback::before {
     background: linear-gradient(
       to right,
       var(--steel-blue-color) 0%,
