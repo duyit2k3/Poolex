@@ -130,6 +130,7 @@
   bottom: 0;
   transform: translate(-50%, 50%);
   text-wrap: nowrap;
+  white-space: nowrap;
   text-transform: none;
 }
 
