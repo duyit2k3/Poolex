@@ -122,6 +122,7 @@
   color: var(--white-text-color);
   font-family: var(--font-main);
   text-wrap: nowrap;
+  white-space: nowrap;
   display: none;
 }
 
