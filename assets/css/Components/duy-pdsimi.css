@@ -1,0 +1,91 @@
+.pdsimi {
+  font-family: var(--font-main);
+  margin-top: 103px;
+  margin-bottom: 100px;
+}
+.pdsimi-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+.pdsimi-card {
+  border: none;
+  display: flex;
+  align-items: baseline;
+  max-width: 278px;
+}
+.pdsimi-card .card-header {
+  width: 100%;
+  border-radius: 12px;
+  background-color: rgba(21, 74, 129, 0.15);
+  padding: 0;
+  max-height: 296px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pdsimi-card .card-header img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  object-fit: scale-down;
+}
+.pdsimi-card .card-body {
+  width: 100%;
+  color: var(--deep-blue-color);
+  padding: 0;
+  padding-top: 5.7%;
+  padding-bottom: 4.4%;
+}
+.pdsimi-card .card-title {
+  font-weight: 600;
+  font-size: max(14px, min(4vw, 16px));
+  line-height: max(12px, min(2vw, 19.2px));
+}
+.pdsimi-card .card-text {
+  font-weight: 400;
+  font-size: max(12px, min(1.5vw, 14px));
+}
+
+.pdsimi-card .card-footer {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.pdsimi-newprice {
+  font-weight: 600;
+  font-size: max(18px, min(2vw, 24px));
+  line-height: max(21.6px, min(2vw, 28.8px));
+  color: var(--deep-blue-color);
+}
+.pdsimi-oldprice {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--slate-gray-color);
+  text-decoration: line-through;
+}
+.fancybox-content img{
+  width: 100%;
+}
+@media only screen and (max-width: 739px) {
+  .pdsimi-card .card-header img {
+    width: 70%;
+  }
+  .pdsimi-card .card-header {
+    max-height: 296px;
+    height: 180px;
+  }
+  .pdsimi {
+    margin-top: 73px;
+    margin-bottom: 80px;
+  }
+
+}
+@media only screen and (max-width: 395px) {
+  .pdsimi-card .card-header img {
+    width: 60%;
+  }
+}

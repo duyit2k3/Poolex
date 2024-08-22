@@ -1,0 +1,115 @@
+.banner {
+  background: url("../../images/backgrounds/bg-product.png") no-repeat center
+    top;
+  object-fit: contain;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  margin-top: 42px;
+  padding-top: 100px;
+  font-family: var(--font-main);
+}
+.banner-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding-top: 145px;
+  padding-bottom: 122px;
+}
+.banner-heading {
+  font-size: 64px;
+  font-weight: 600;
+  color: var(--white-text-color);
+  line-height: 80px;
+  margin-bottom: 8px;
+}
+.banner-breadcrumb {
+  --bs-breadcrumb-divider: url("../../images/icons/breadcrumb.svg");
+  font-size: 24px;
+}
+.banner-breadcrumb .breadcrumb {
+  justify-content: center;
+}
+
+.banner-breadcrumb .breadcrumb-item,
+.banner-breadcrumb .breadcrumb-item a {
+  color: var(--white-text-color);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+.banner-breadcrumb .breadcrumb-item + .breadcrumb-item {
+  padding-left: 13px;
+}
+.banner-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  margin-right: 10.5px;
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: var(--bs-breadcrumb-divider);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(4.8px);
+}
+
+@media only screen and (max-width: 1440px) {
+  .banner-wrapper {
+    padding-top: 115px;
+    padding-bottom: 92px;
+  }
+  .banner-heading {
+    font-size: 54px;
+    line-height: 70px;
+  }
+}
+@media only screen and (max-width: 1283px) {
+  .banner-wrapper {
+    padding-top: 105px;
+    padding-bottom: 82px;
+  }
+  .banner-heading {
+    font-size: 49px;
+    line-height: 65px;
+  }
+  .banner-breadcrumb .breadcrumb-item,
+  .banner-breadcrumb .breadcrumb-item a {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .banner-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .banner {
+    padding-top: 60px;
+    margin-top: 0;
+  }
+  .banner-heading {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .banner-breadcrumb .breadcrumb-item,
+  .banner-breadcrumb .breadcrumb-item a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .banner-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    width: 12px;
+    height: 12px;
+  }
+}   
+
+@media only screen and (max-width: 739px) {
+  .banner {
+    padding-top: 52px;
+  }
+  .banner-heading {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}

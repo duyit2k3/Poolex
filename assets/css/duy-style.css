@@ -14,3 +14,9 @@
 @import "./Components/duy-solution.css";
 @import "./Components/duy-contact.css";
 @import "./Components/duy-news.css";
+
+@import "./Components/duy-banner.css";
+@import "./Components/duy-product.css";
+@import "./Components/duy-product-detail.css";
+@import "./Components/duy-QandA.css";
+@import "./Components/duy-pdsimi.css";

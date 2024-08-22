@@ -130,7 +130,6 @@
   bottom: 0;
   transform: translate(-50%, 50%);
   text-wrap: nowrap;
-  white-space: nowrap;
   text-transform: none;
 }
 
@@ -181,6 +180,7 @@
 
 @media only screen and (max-width: 1023px) {
   .solution-list__wrapper {
+    width: 920px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -224,7 +224,7 @@
     padding-bottom: 70px;
   }
   .solution-list__wrapper {
-    width: 950px;
+    /* width: 920px; */
   }
   .solution-card .card-title {
     height: 5.35em;
@@ -249,7 +249,7 @@
 
 @media only screen and (max-width: 395px) {
   .solution-list__wrapper {
-    width: 700px;
+    width: 610px;
   }
   .solution-card {
     width: 173px;
