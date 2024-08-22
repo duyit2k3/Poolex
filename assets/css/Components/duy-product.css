@@ -352,9 +352,9 @@ its values is > 50%. */
   justify-content: center;
   align-items: center;
 }
-/* .product-list1 .product-img img {
-
-} */
+.product-list1 .product-img img {
+  margin: auto;
+}
 .product-list1 .product-middle {
   width: 100%;
   color: var(--deep-blue-color);
